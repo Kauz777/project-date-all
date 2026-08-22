@@ -6,9 +6,10 @@
 
 <br>
 
+<!-- Sprite do Dragonite -->
 <img
-  src="https://media1.tenor.com/m/c8llSRMMSWAAAAAC/dragonite-dragonite-prada-bag.gif"
-  width="200"
+  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/149.gif"
+  width="150"
   alt="Dragonite"
 >
 
@@ -18,6 +19,7 @@
 
 <br><br>
 
+<!-- GIF do Rimuru -->
 <img
   src="https://media1.tenor.com/m/3WtEv53EpeEAAAAC/rimuru-rimuru-tempest.gif"
   width="350"
@@ -30,9 +32,10 @@
 
 <br>
 
+<!-- Tecnologias -->
 <img
   src="https://skillicons.dev/icons?i=html,css,js,git,github,vscode"
-  alt="Tecnologias"
+  alt="HTML, CSS, JavaScript, Git, GitHub e VS Code"
 >
 
 <br><br>
