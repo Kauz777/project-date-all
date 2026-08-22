@@ -8,17 +8,17 @@
 
 <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/149.gif" width="150" alt="Dragonite">
 
+### 📦 Entregando o projeto...
+
 <br>
 
-📦 **Entregando mais um projeto...**
+⬇️
 
-<br><br>
+<br>
 
 <img src="https://media1.tenor.com/m/3WtEv53EpeEAAAAC/rimuru-rimuru-tempest.gif" width="350" alt="Rimuru Tempest">
 
-<br>
-
-### ⚡ Desenvolvendo, aprendendo e evoluindo.
+### 🔵 Projeto recebido!
 
 <br>
 
@@ -27,7 +27,7 @@
 <br><br>
 
 <a href="https://github.com/Kauz777">
-<img src="https://img.shields.io/badge/GitHub-Kauz777-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
+  <img src="https://img.shields.io/badge/GitHub-Kauz777-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
 </a>
 
 </div>
