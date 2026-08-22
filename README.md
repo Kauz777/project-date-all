@@ -6,12 +6,7 @@
 
 <br>
 
-<!-- Sprite do Dragonite -->
-<img
-  src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/149.gif"
-  width="150"
-  alt="Dragonite"
->
+<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/149.gif" width="150" alt="Dragonite">
 
 <br>
 
@@ -19,12 +14,7 @@
 
 <br><br>
 
-<!-- GIF do Rimuru -->
-<img
-  src="https://media1.tenor.com/m/3WtEv53EpeEAAAAC/rimuru-rimuru-tempest.gif"
-  width="350"
-  alt="Rimuru Tempest"
->
+<img src="https://media1.tenor.com/m/3WtEv53EpeEAAAAC/rimuru-rimuru-tempest.gif" width="350" alt="Rimuru Tempest">
 
 <br>
 
@@ -32,19 +22,12 @@
 
 <br>
 
-<!-- Tecnologias -->
-<img
-  src="https://skillicons.dev/icons?i=html,css,js,git,github,vscode"
-  alt="HTML, CSS, JavaScript, Git, GitHub e VS Code"
->
+<img src="https://skillicons.dev/icons?i=html,css,js,git,github,vscode" alt="Tecnologias">
 
 <br><br>
 
 <a href="https://github.com/Kauz777">
-  <img
-    src="https://img.shields.io/badge/GitHub-Kauz777-181717?style=for-the-badge&logo=github&logoColor=white"
-    alt="GitHub"
-  >
+<img src="https://img.shields.io/badge/GitHub-Kauz777-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
 </a>
 
 </div>
