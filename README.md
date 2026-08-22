@@ -2,6 +2,8 @@
 
 # 🐉 Project Date All
 
+<img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/versions/generation-v/black-white/animated/149.gif" width="150" alt="Dragonite">
+
 ### Meus projetos e estudos em desenvolvimento web
 
 <br>
