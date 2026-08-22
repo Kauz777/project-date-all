@@ -1,0 +1,464 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   VARIÁVEIS
+========================= */
+
+:root {
+    --background: #080808;
+    --card: rgba(18, 18, 18, 0.82);
+    --input: #101010;
+
+    --text: #f5f5f5;
+    --text-secondary: #929292;
+    --placeholder: #5f5f5f;
+
+    --border: rgba(255, 255, 255, 0.09);
+    --border-focus: rgba(255, 255, 255, 0.3);
+
+    --button: #f5f5f5;
+    --button-text: #080808;
+
+    --star: #ffc107;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    padding: 24px 16px;
+
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            #191919 0%,
+            #0b0b0b 38%,
+            #080808 70%
+        );
+
+    color: var(--text);
+
+    font-family:
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+    -webkit-font-smoothing: antialiased;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.feedback {
+    width: 100%;
+    max-width: 500px;
+
+    margin: 0 auto;
+
+    padding: 28px 20px;
+
+    background: var(--card);
+
+    border: 1px solid var(--border);
+    border-radius: 20px;
+
+    box-shadow:
+        0 20px 60px rgba(0, 0, 0, 0.45);
+
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho {
+    margin-bottom: 30px;
+}
+
+.cabecalho h1 {
+    margin-bottom: 12px;
+
+    font-size: clamp(1.8rem, 8vw, 2.5rem);
+
+    line-height: 1.15;
+
+    font-weight: 700;
+
+    letter-spacing: -1px;
+}
+
+.cabecalho p {
+    color: var(--text-secondary);
+
+    font-size: 0.92rem;
+
+    line-height: 1.65;
+}
+
+
+/* =========================
+   FORMULÁRIO
+========================= */
+
+#formFeedback {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 22px;
+}
+
+
+/* =========================
+   CAMPOS
+========================= */
+
+.campo {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+.campo label {
+    color: var(--text);
+
+    font-size: 0.9rem;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   INPUT / TEXTAREA
+========================= */
+
+.campo input,
+.campo textarea {
+    width: 100%;
+
+    border: 1px solid var(--border);
+    border-radius: 11px;
+
+    outline: none;
+
+    background: var(--input);
+    color: var(--text);
+
+    font-family: inherit;
+    font-size: 16px;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/*
+   16px é importante no iPhone.
+   Evita o zoom automático do Safari.
+*/
+
+.campo input {
+    min-height: 52px;
+
+    padding: 14px;
+}
+
+.campo textarea {
+    min-height: 140px;
+
+    padding: 14px;
+
+    line-height: 1.5;
+
+    resize: vertical;
+}
+
+
+/* PLACEHOLDER */
+
+.campo input::placeholder,
+.campo textarea::placeholder {
+    color: var(--placeholder);
+}
+
+
+/* FOCO */
+
+.campo input:focus,
+.campo textarea:focus {
+    border-color: var(--border-focus);
+
+    background: #121212;
+
+    box-shadow:
+        0 0 0 3px rgba(255, 255, 255, 0.03);
+}
+
+
+/* =========================
+   ESTRELAS
+========================= */
+
+.estrelas {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 4px;
+
+    margin-top: 2px;
+}
+
+.estrelas button {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+
+    padding: 0;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: #3d3d3d;
+
+    font-size: 2rem;
+
+    line-height: 1;
+
+    cursor: pointer;
+
+    -webkit-tap-highlight-color: transparent;
+
+    transition:
+        color 0.15s ease,
+        transform 0.15s ease;
+}
+
+
+/* ESTRELA SELECIONADA */
+
+.estrelas button.ativa {
+    color: var(--star);
+}
+
+
+/* ESTRELA AO PASSAR O MOUSE */
+
+.estrelas button:hover {
+    color: var(--star);
+
+    transform: scale(1.08);
+}
+
+
+/* EFEITO DE TOQUE */
+
+.estrelas button:active {
+    transform: scale(0.88);
+}
+
+
+/* =========================
+   BOTÃO ENVIAR
+========================= */
+
+.btn-enviar {
+    width: 100%;
+
+    min-height: 54px;
+
+    margin-top: 2px;
+
+    padding: 14px 20px;
+
+    border: none;
+    border-radius: 11px;
+
+    background: var(--button);
+    color: var(--button-text);
+
+    font-family: inherit;
+
+    font-size: 0.95rem;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    -webkit-tap-highlight-color: transparent;
+
+    transition:
+        transform 0.2s ease,
+        opacity 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+/* HOVER */
+
+.btn-enviar:hover {
+    opacity: 0.9;
+
+    box-shadow:
+        0 8px 25px rgba(255, 255, 255, 0.08);
+}
+
+
+/* TOQUE */
+
+.btn-enviar:active {
+    transform: scale(0.97);
+}
+
+
+/* =========================
+   DESKTOP / TABLET
+========================= */
+
+@media (min-width: 600px) {
+
+    body {
+        padding: 50px 24px;
+    }
+
+    .feedback {
+        padding: 38px;
+
+        border-radius: 24px;
+    }
+
+    .cabecalho h1 {
+        font-size: 2.3rem;
+    }
+}
+
+
+/* =========================
+   CELULARES PEQUENOS
+========================= */
+
+@media (max-width: 360px) {
+
+    body {
+        padding: 16px 12px;
+    }
+
+    .feedback {
+        padding: 24px 16px;
+
+        border-radius: 17px;
+    }
+
+    .cabecalho h1 {
+        font-size: 1.7rem;
+    }
+
+    .cabecalho p {
+        font-size: 0.88rem;
+    }
+
+    .estrelas {
+        gap: 1px;
+    }
+
+    .estrelas button {
+        width: 46px;
+        height: 46px;
+
+        font-size: 1.8rem;
+    }
+}
+
+
+/* =========================
+   REDUZIR ANIMAÇÕES
+   ACESSIBILIDADE
+========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* =========================
+   MENSAGENS DO FORMULÁRIO
+========================= */
+
+.erro-campo {
+    display: block;
+
+    margin-top: 2px;
+
+    color: #ff6b6b;
+
+    font-size: 0.8rem;
+
+    line-height: 1.4;
+}
+
+
+/* Campo com erro */
+
+.campo input[aria-invalid="true"],
+.campo textarea[aria-invalid="true"] {
+    border-color: rgba(255, 107, 107, 0.5);
+}
+
+
+/* Mensagem de sucesso */
+
+.mensagem-sucesso {
+    padding: 14px 16px;
+
+    margin-bottom: 4px;
+
+    border: 1px solid rgba(80, 200, 120, 0.2);
+    border-radius: 10px;
+
+    background: rgba(80, 200, 120, 0.08);
+
+    color: #7ee2a8;
+
+    font-size: 0.9rem;
+
+    line-height: 1.5;
+}

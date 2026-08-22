@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sua Empresa</title>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+
+<body>
+
+    <!-- Início -->
+    <div class="background-image"></div>
+
+    <div class="container">
+        <div class="logo">
+            <img
+                src="./source/image/logo/logo.jpg"
+                alt="Logo da Empresa"
+            >
+        </div>
+
+        <div class="texto">
+            <h1>Bem-vindo à Sua Empresa</h1>
+            <p>Oferecemos os melhores produtos e serviços para você.</p>
+        </div>
+    </div>
+
+    <!-- Barra de navegação -->
+    <div class="hootbar">
+        <ul>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#produtos">Produtos</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#whatsapp">WhatsApp</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </div>
+
+    <!-- Seção Início-->
+
+    <div class="inicio" id="inicio">
+        <h2>Sobre Nós</h2>
+        <p>Somos uma empresa dedicada a fornecer soluções de alta qualidade para nossos clientes. Nossa missão é garantir a satisfação e confiança de todos que nos procuram.</p>
+        <img src="./source/image/logo/logo.jpg" alt="Imagem da Empresa">   
+    </div>
+
+    <!-- Seção Produtos -->
+
+    <div class="produtos" id="produtos">
+        <h2>Nossos Produtos</h2>
+        <p>Oferecemos uma ampla gama de produtos que atendem às necessidades de nossos clientes. Confira alguns de nossos destaques:</p>
+        <div class="produto-lista">
+            <div class="produto-item">
+                <img src="./source/image/produtos/1.jpg" alt="Produto 1">
+                <h3>Produto 1</h3>
+                <p>Descrição do Produto 1.</p>
+            </div>
+            <div class="produto-item">
+                <img src="./source/image/produtos/2.jpg" alt="Produto 2">
+                <h3>Produto 2</h3>
+                <p>Descrição do Produto 2.</p>
+            </div>
+            <div class="produto-item">
+                <img src="./source/image/produtos/3.jpg" alt="Produto 3">
+                <h3>Produto 3</h3>
+                <p>Descrição do Produto 3.</p>
+            </div>
+            <div class="produto-item">
+                <img src="./source/image/produtos/4.jpg" alt="Produto 4">
+                <h3>Produto 4</h3>
+                <p>Descrição do Produto 4.</p>
+            </div>
+            <div class ="produto-item">
+                <img src="./source/image/produtos/5.jpg" alt="Produto 5">
+                <h3>Produto 5</h3>
+                <p>Descrição do Produto 5.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção Serviços -->
+
+    <div class="servicos" id="servicos">
+        <h2>Nossos Serviços</h2>
+        <p>Além de produtos de qualidade, também oferecemos serviços especializados para garantir que você tenha a melhor experiência possível.</p>
+        <ul>
+            <li>Serviço 1</li>
+            <li>Serviço 2</li>
+            <li>Serviço 3</li>
+        </ul>  
+    </div>
+
+    <!--Pedido Whatsapp-->
+
+    <div class="whatsapp">
+        <a href="https://api.whatsapp.com/send?phone=SEU_NUMERO_DE_TELEFONE" target="_blank">
+            <img src="./source/image/logo/whatsapp.png" alt="WhatsApp">
+            <span>Faça seu pedido pelo WhatsApp</span>
+        </a>
+    </div>
+
+    <!-- Seção Contato -->
+
+    <div class="contato" id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Estamos à disposição para responder suas dúvidas e fornecer mais informações sobre nossos produtos e serviços.</p>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2026 Sua Empresa. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script para navegação suave -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+    </script>
+
+    <!-- Script para alternar a barra de navegação em dispositivos móveis -->
+    <script>
+        const hootbar = document.querySelector('.hootbar');
+        const toggleButton = document.createElement('button');
+        toggleButton.textContent = 'Menu';
+        toggleButton.classList.add('toggle-button');
+        hootbar.parentNode.insertBefore(toggleButton, hootbar);
+
+        toggleButton.addEventListener('click', () => {
+            hootbar.classList.toggle('active');
+        }); 
+
+    </script>
+
+    <!-- Script para alternar a barra de navegação em dispositivos móveis -->
+    <script>
+        const hootbar = document.querySelector('.hootbar');
+        const toggleButton = document.createElement('button');
+        toggleButton.textContent = 'Menu';
+        toggleButton.classList.add('toggle-button');
+        hootbar.parentNode.insertBefore(toggleButton, hootbar);
+
+        toggleButton.addEventListener('click', () => {
+            hootbar.classList.toggle('active');
+        }); 
+
+    </script>
+
+    <!-- Script para alternar a barra de navegação em dispositivos móveis -->
+    <script>
+        const hootbar = document.querySelector('.hootbar');
+        const toggleButton = document.createElement('button');
+        toggleButton.textContent = 'Menu';
+        toggleButton.classList.add('toggle-button');
+        hootbar.parentNode.insertBefore(toggleButton, hootbar);
+
+        toggleButton.addEventListener('click', () => {
+            hootbar.classList.toggle('active');
+        });
+    
+
+    </script>
+
+</body>
+</html>
